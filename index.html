@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 style="text-align: center; margin-top: 150px;">Generate a Password Which will you want Easy, Medium or Hard</h3>
+    <div class="wrap">
+        <div class="container">
+            <div class="boxone">
+                <input id="input" type="password" maxlength="8" minlength="8">
+                <div class="hideshow"><input type="checkbox" onclick="showhide()">
+                    <p>Show</p>
+                </div>
+            </div>
+        </div>
+        <div class="containertwo">
+            <div class="common" style="margin-left: 20px;">
+                <h4>FOR &nbsp&nbsp&nbspEASY&nbsp&nbsp PASSWORD</h4>
+                <button class="btn" onclick="Easy()">Click</button>
+            </div>
+            <div class="common">
+                <h4>FOR MEDIUM PASSWORD</h4>
+                <button class="btn" onclick="Medium()">Click</button>
+            </div>
+            <div class="common" style="margin-right: 20px;">
+                <h4>FOR &nbsp&nbsp&nbspHARD&nbsp&nbsp PASSWORD</h4>
+                <button class="btn" onclick="Hard()">Click</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
